@@ -40,6 +40,7 @@
 <h1> Texto escrito</h1>
     <p> Utilizar a SUB para coisa do tipo H<sub>2</sub>O </p>
 
+
     <h1> Texto pré-formatado</h1>
     <p> Usar a tag PRE </p>
 
@@ -89,7 +90,7 @@ encostado
         "Era uma noite fria de lua cheia. As estrelas cintilavam sobre a cidade de Santa Fé, 
          que de tão quieta e deserta parecia um cemitério abandonado. Era tanto o silêncio 
          e tão leve o ar, que se alguém aguçasse o ouvido talvez pudesse até escutar o 
-         sereno na solidão.""
+         sereno na solidão."
     </blockquote></p>
 
 <h1> Abreviações com ABBR</h1>
@@ -97,8 +98,58 @@ encostado
 
 </p>
 
-<h1> Texto invertido </h1>
-<p> Você pode escrever com texto invertido usando </p>
-</body>
+<h1>Texto Invertido</h1>
+<p>Voce pode escrever com texto invertido usando tag BDO com atributo DIR="RTL"</p>
+<p><bdo dir="rtl">Este é uma exemplo</bdo>  </p>
 
+<h1>Informações de contato</h1>
+<p> Usar a tag ADDRESS</p>
+<address>
+   Voce pode contatar o autor em <a href="http://www.somedomain.com/contact">www.somedomain.com</a>.<br>
+   Se encontrar qualquer bug, por favor <a href="mailto:webmaster@somedomain.com">contate o administrador do site</a>.<br>
+   Você tambem pode querer nos visitar:<br>
+   Mozilla Foundation<br>
+   1981 Landings Drive<br>
+   Building K<br>
+   Mountain View, CA 94043-0801<br>
+   USA
+</address>
+
+<h1>Cabeçalho</h1>
+<p>Para indicar que aquele conteúdo é um cabeçaho, utilize a tag HEADER</p>
+<header> Eu sou um elemento que faz parte do cabeçalho da página</header>
+<p> também posso fazer um agrupamento de cabeçalhos com a tag HGROUP</p>
+       <hgroup class"cabecalhos-noticias">
+              <h1>Sou o título principal</h1>
+              <h2>Eu Sou um subtítulo</h2>
+       </hgroup>
+
+<h1>Rodapé</h1>
+   <p>Para indicar que aquele conteúdo é um rodapé, utilize a tag FOOTER</p>
+</h1>
+<footer> Eu sou um elemento que faz parte do rodapé da página</footer>
+
+<h1>Diferença entre SECTION e ARTICLE</h1>
+<p>
+   <em>"Qual a diferença?"</em>, você pode estar se perguntando. Ambos os elementos são usados para seccionar o conteúdo – e, sim, eles definitivamente podem ser intercambiáveis. É uma questão de analisar cada situação. O HTML4 nos oferecia somente um tipo de elemento container, a DIV. Embora ela ainda seja usada em HTML5, ainda temos a possibilidade de substituí-la em duas maneiras, usando SECTION e ARTICLE.
+<pre>
+       Os elementos SECTION e ARTICLE são conceitualmente similares e intercambiáveis. Para decidir qual deles você deve escolher, observe o que citaremos abaixo:
+       
+
+       1- Um ARTICLE tem como objetivo ser independentemente distribuível ou reutilizável.
+       
+       2-Uma SECTION é um  agrupamento temático de conteúdos.
+</pre>
+</p>
+
+<h1>FIGURE e FIGCAPTION</h1>
+<p> FIGURE serve para inserir conteúdos de imagem, enquanto FIGCAPTION é destinado às legendas dessa imagem.</p>
+
+<h1>Time</h1>
+O elemento TIME permite que uma data no formato ISO 8601 não ambígua seja adicionada a uma versão mais amigável para leitura humana daquela data.
+<pre><code lang="html" >
+   &lt;time datetime="2017-10-31T11:21:00+02:00"&gt;Terça, 31 Outubro 2017&lt;/time&gt;
+   </code></pre>
+   Por que se preocupar com &lt;time&gt;? Embora humanos possam eliminar ambiguidades e ler o tempo de maneiras normais, os computadores podem ler datas em formato ISO 8601 e ver a data, a hora e o fuso horário.
+</body>
 </html>
